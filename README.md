@@ -40,7 +40,10 @@ a.eat();
 // <- 3
 
 console.log(Object.prototype.toString.call(a));
-// [object Array]
+// <- [object Array]
+
+console.log(Array === Array2);
+// <- false
 ```
 
 # License
