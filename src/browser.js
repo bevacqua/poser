@@ -10,7 +10,7 @@ function poser (type) {
   d.body.appendChild(iframe);
 
   var altdom = frames[frames.length - 1].document;
-  altdom.write('<script>parent["' + key + '"]=window.' + type + ';<\/script>');
+  altdom.write('<script>parent["' + key + '"]=' + type + ';<\/script>');
 
   var stolen = global[key];
   delete global[key]; // pollution-free environment!
