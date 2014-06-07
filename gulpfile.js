@@ -36,7 +36,7 @@ gulp.task('clean', function () {
 gulp.task('build', ['clean', 'bump'], function () {
   var pkg = require('./package.json');
 
-  return browserify('./src/poser.js')
+  return browserify('./src/browser.js')
     .bundle({ debug: true, standalone: 'poser' })
     .pipe(source('poser.js'))
     .pipe(streamify(header(extended, { pkg : pkg } )))
