@@ -1,0 +1,26 @@
+{
+  "name": "poser",
+  "description": "Create clean arrays that you can safely extend",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bevacqua/poser",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "ng@bevacqua.io",
+    "url": "http://bevacqua.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bevacqua/poser.git"
+  },
+  "main": "dist/poser.js",
+  "ignore": [
+    ".*",
+    "package.json",
+    "node_modules",
+    "src",
+    "test",
+    "gulpfile.js"
+  ],
+  "dependencies": {}
+}
