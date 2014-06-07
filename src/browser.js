@@ -12,9 +12,9 @@ function poser (type) {
   var altdom = frames[frames.length - 1].document;
   altdom.write('<script>parent["' + key + '"]=window.' + type + ';<\/script>');
 
-  var borrowed = global[key];
+  var stolen = global[key];
   delete global[key]; // pollution-free environment!
-  return borrowed;
+  return stolen;
 }
 
 module.exports = poser;
