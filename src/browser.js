@@ -6,14 +6,18 @@ var key = 'stolen, but no problem, just a poser';
 
 function poser (type) {
   var iframe = d.createElement('iframe');
+  var altdom;
+  var stolen;
+
   iframe.style.display = 'none';
   d.body.appendChild(iframe);
 
-  var altdom = frames[frames.length - 1].document;
+  altdom = frames[frames.length - 1].document;
   altdom.write('<script>parent["' + key + '"]=' + type + ';<\/script>');
 
-  var stolen = global[key];
+  stolen = global[key];
   delete global[key]; // pollution-free environment!
+
   return stolen;
 }
 
