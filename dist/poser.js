@@ -1,6 +1,6 @@
 /**
  * poser - Create clean arrays that you can safely extend
- * @version v1.0.2
+ * @version v1.0.3
  * @link https://github.com/bevacqua/poser
  * @license MIT
  */
