@@ -1,6 +1,6 @@
 {
   "name": "poser",
-  "description": "Create clean arrays that you can safely extend",
+  "description": "Create clean arrays, or anything else, which you can safely extend",
   "version": "1.0.4",
   "homepage": "https://github.com/bevacqua/poser",
   "author": {

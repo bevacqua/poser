@@ -2,10 +2,10 @@
 
 var vm = require('vm');
 
-function stealArray () {
+function poser (type) {
   var sandbox = {};
-  vm.runInNewContext('stolen=Array;', sandbox, 'poser.vm');
+  vm.runInNewContext('stolen=' + type + ';', sandbox, 'poser.vm');
   return sandbox.stolen;
 }
 
-module.exports = stealArray;
+module.exports = poser;

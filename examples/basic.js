@@ -1,4 +1,4 @@
-var Array2 = require('../src/node')();
+var Array2 = require('..').Array();
 // <- Array
 
 Array2.prototype.eat = function () {

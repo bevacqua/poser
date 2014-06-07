@@ -1,6 +1,6 @@
 # poser
 
-> Create clean arrays that you can safely extend
+> Create clean arrays, _or anything else_, which you can safely extend
 
 
 # Install
@@ -17,14 +17,34 @@ Using `npm`
 npm install -S poser
 ```
 
-# `poser()`
+# `poser(type)`
 
-Gives you an `Array` instance created in another execution context.
+Gives you the `type` global from another execution context. The context is different every time, giving you references in different contexts.
+
+## `poser.Array()`
+
+Shortcut to get an `Array` from another context. Equivalent to `poser('Array')`.
+
+## `poser.Object()`
+
+Shortcut to get an `Object` from another context. Equivalent to `poser('Object')`.
+
+## `poser.Function()`
+
+Shortcut to get an `Function` from another context. Equivalent to `poser('Function')`.
+
+## `poser.Date()`
+
+Shortcut to get an `Date` from another context. Equivalent to `poser('Date')`.
+
+## `poser.String()`
+
+Shortcut to get an `String` from another context. Equivalent to `poser('String')`.
 
 ##### Example
 
 ```js
-var Array2 = require('poser')();
+var Array2 = require('poser').Array();
 // <- Array
 
 Array2.prototype.eat = function () {
