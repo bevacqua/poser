@@ -9,7 +9,7 @@ function poser (type) {
   iframe.style.display = 'none';
   d.body.appendChild(iframe);
 
-  return iframe.contentWindow[type]
+  return iframe.contentWindow[type];
 }
 
 module.exports = poser;
