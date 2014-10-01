@@ -1,15 +1,15 @@
-# v1.1.5
+# v1.1.5 Boat Excursion
 
 - Fixed Browserify errors for the client-side distribution
 
-# v1.1.4
+# v1.1.4 Clone
 
 - Greatly simplified the client-side version
 
-# v1.1.0
+# v1.1.0 Drastic Measures
 
 - Generic!
 
-# v1.0.0
+# v1.0.0 IPO
 
 - Initial Public Release
