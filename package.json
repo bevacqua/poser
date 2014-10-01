@@ -14,7 +14,7 @@
     "url": "git://github.com/bevacqua/poser.git"
   },
   "browser": {
-    "./src/node": "./src/browser"
+    "./src/node.js": "./src/browser.js"
   },
   "devDependencies": {
     "browserify": "^4.1.3",
