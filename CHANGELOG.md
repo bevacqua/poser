@@ -1,3 +1,7 @@
+# v1.1.5
+
+- Fixed Browserify errors for the client-side distribution
+
 # v1.1.4
 
 - Greatly simplified the client-side version
