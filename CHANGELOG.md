@@ -1,3 +1,7 @@
+# v1.2.0 Polyfill Forwarding
+
+- Forward polyfills to the stolen reference in browser-side implementation
+
 # v1.1.5 Boat Excursion
 
 - Fixed Browserify errors for the client-side distribution
